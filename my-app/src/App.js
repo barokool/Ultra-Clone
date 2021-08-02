@@ -5,6 +5,7 @@ import FirstSection from "./components/Main.js/FirstSection"
 import SecondSection from "./components/Main.js/SecondSection"
 import ThirdSection from "./components/Main.js/ThirdSection"
 import FourthSection from "./components/Main.js/FourthSection"
+import Footer from "./components/Main.js/Footer"
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -22,6 +23,7 @@ function App() {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <Footer />
     </div>
   );
 }

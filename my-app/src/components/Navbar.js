@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, Heading, Link, Button } from './Navbar/Navbar.element'
+import { Nav, Heading, Link, ButtonNav } from './Navbar/Navbar.element'
 
 const Navbar = () => {
     return (
@@ -12,7 +12,7 @@ const Navbar = () => {
                     <Link>Home</Link>
                     <Link>Services</Link>
                     <Link>Products</Link>
-                    <Button>Sign up</Button>
+                    <ButtonNav>Sign up</ButtonNav>
                 </div>
             </Nav>
         </div>

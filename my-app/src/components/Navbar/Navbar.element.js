@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import { Button } from '../Main.js/FirstSection.element'
 export const Nav = styled.nav`
 height:80px;
 display:flex;
@@ -23,17 +23,9 @@ cursor:pointer;
 
 `
 
-export const Button = styled.button`
-padding:0.5rem 1.5rem;
-background-color:#512D6D;
-border-radius:5px;
-margin-left:2rem;
-color:#fff;
-font-size:1rem;
-border:none;
-
-cursor:pointer;
-&:hover {
-    background:black;
+export const ButtonNav = styled(Button)`
+padding:0.5rem 2rem;
+&:hover{
+    padding:0.5rem 3rem;
 }
 `
