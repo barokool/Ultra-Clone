@@ -14,13 +14,17 @@ padding:0 8rem;
 
 export const Heading = styled.h1`
 color:#fff;
+cursor:pointer;
 
 `
 export const Link = styled.a`
 color:#fff;
 margin:0 1rem;
 cursor:pointer;
-
+&:hover {
+    text-decoration:underline;
+    
+}
 `
 
 export const ButtonNav = styled(Button)`

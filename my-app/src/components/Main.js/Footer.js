@@ -7,7 +7,7 @@ const Footer = () => {
                 <Heading>Join our exclusive membership to receive the latest news and trends </Heading>
                 <Para>You can unsubscribe at any time</Para>
                 <form>
-                    <Input value="Your Email" />
+                    <Input type="text" placeholder="Email..." />
                     <FooterButton>Subscribe</FooterButton>
                 </form>
             </SubsDiv>
