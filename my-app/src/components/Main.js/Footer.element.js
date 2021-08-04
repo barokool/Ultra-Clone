@@ -6,21 +6,24 @@ flex-direction:column;
 padding-top:12rem;
 padding-bottom:0;
 width:100%;
+@media (max-width: 790px) {
+    padding-top:4rem;
+}
 `
 export const SmallFooterDiv = styled.div`
 display:flex;
 justify-content:center;
 align-items:center;
-
+margin-bottom:20px;
+@media (max-width: 550px) {
+    
+}
 `
 export const Span = styled.span`
 color:#fff;
 margin : 0 2rem;
 `
 
-export const Logo = styled.h3`
-margin-right:auto;
-`
 
 export const Link = styled.a`
 color:#fff;
@@ -31,18 +34,31 @@ margin: 0 1rem;
 export const Para = styled.p`
 color:#fff;
 font-size:1rem;
-margin:2rem 0;
-
+padding:1rem 0;
+@media (max-width: 550px) {
+    display:grid;
+    grid-template-columns: 100%;
+    padding:0.5rem;
+}
 `
 
 export const Heading = styled.h3`
 color:#fff;
 font-size:2rem;
+@media (max-width: 790px) {
+}
+
 `
-export const LogoHeading = styled(Heading)`
-font-size:3rem;
-padding-right:2rem;
+
+export const BigHeading = styled.h3`
+color:#fff;
+font-size:2rem;
+padding:0 3rem;
+@media (max-width: 790px) {
+}
+
 `
+
 
 export const Input = styled.input`
 padding:0.5rem 2rem;
@@ -60,6 +76,7 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
+
 `
 
 export const GridDiv = styled.div`
@@ -67,15 +84,23 @@ display:flex;
 justify-content:center;
 align-items:center;
 padding:4rem 2rem;
+@media (max-width: 790px) {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    
+}
+@media (max-width: 550px) {
+    display:grid;
+    grid-template-columns: 100%;
+    
+}
 `
 export const SmallGridDiv = styled.div`
-margin:1rem 4rem;
-padding:0;
-
-`
-
-export const LinkDiv = styled.div`
-margin-right:auto;
-display:inline-block;
-
+padding:0 2rem;
+@media (max-width: 790px) {
+    padding:2rem;
+}
+@media (max-width: 550px) {
+    padding:1.5rem;
+}
 `

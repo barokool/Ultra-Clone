@@ -10,6 +10,8 @@ top:0;
 z-index:999;
 background:#101522;
 padding:0 8rem;
+
+
 `
 
 export const Heading = styled.h1`
@@ -25,11 +27,19 @@ cursor:pointer;
     text-decoration:underline;
     
 }
+@media (max-width: 790px) {
+    display:none;
+}
 `
 
 export const ButtonNav = styled(Button)`
 padding:0.5rem 2rem;
 &:hover{
     padding:0.5rem 3rem;
+    text-decoration:underline;
+}
+
+    @media (max-width: 790px) {
+    display:none;
 }
 `

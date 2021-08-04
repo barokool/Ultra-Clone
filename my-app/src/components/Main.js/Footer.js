@@ -1,10 +1,10 @@
 import React from 'react'
-import { Footerdiv, Para, Heading, FooterButton, Input, SubsDiv, GridDiv, SmallGridDiv, SmallFooterDiv, Link, Span, Logo, LinkDiv, LogoHeading } from "./Footer.element"
+import { Footerdiv, Para, Heading, BigHeading, FooterButton, Input, SubsDiv, GridDiv, SmallGridDiv, SmallFooterDiv, Link, Span } from "./Footer.element"
 const Footer = () => {
     return (
         <Footerdiv>
             <SubsDiv>
-                <Heading>Join our exclusive membership to receive the latest news and trends </Heading>
+                <BigHeading>Join our exclusive membership to receive the latest news and trends </BigHeading>
                 <Para>You can unsubscribe at any time</Para>
                 <form>
                     <Input type="text" placeholder="Email..." />
@@ -39,21 +39,16 @@ const Footer = () => {
                     <Para>Twitter</Para>
                 </SmallGridDiv>
             </GridDiv>
+
+            {/* Underfooter */}
             <SmallFooterDiv>
-                <Logo>
-                    <LogoHeading>ULTRA</LogoHeading>
-                </Logo>
+
                 <div>
                     <Span>
-                        Ultra 2020
+                        Ultra 2020 © Thai Doan Gia Bao
                     </Span>
                 </div>
 
-                <LinkDiv>
-                    < Link>Insta</ Link>
-                    < Link>Facebook</ Link>
-                    < Link>Twitter</ Link>
-                </LinkDiv>
             </SmallFooterDiv>
         </Footerdiv>
     )

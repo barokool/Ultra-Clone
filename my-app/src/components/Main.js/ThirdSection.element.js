@@ -6,6 +6,9 @@ display:flex;
 justify-content:center;
 align-items:center;
 padding:4rem;
+@media (max-width: 790px) {
+        display:grid;
+}
 `
 export const SmallDiv = styled.div`
 margin:1rem;
