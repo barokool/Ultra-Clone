@@ -10,7 +10,18 @@ top:0;
 z-index:999;
 background:#101522;
 padding:0 8rem;
+@media (max-width: 790px) {
+padding:0 2rem;
 
+}
+
+
+
+`
+export const BlockDiv = styled.div`
+@media (max-width: 790px) {
+    display:none;
+}
 
 `
 
@@ -27,9 +38,7 @@ cursor:pointer;
     text-decoration:underline;
     
 }
-@media (max-width: 790px) {
-    display:none;
-}
+
 `
 
 export const ButtonNav = styled(Button)`
@@ -39,7 +48,4 @@ padding:0.5rem 2rem;
     text-decoration:underline;
 }
 
-    @media (max-width: 790px) {
-    display:none;
-}
 `
