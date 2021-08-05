@@ -1,5 +1,8 @@
 import React from 'react'
-import { Nav, Heading, Link, ButtonNav } from './Navbar/Navbar.element'
+import HamburNav from './Navbar/HamburNav'
+import { Nav, Heading, Link, ButtonNav, BlockDiv } from './Navbar/Navbar.element'
+
+
 
 const Navbar = () => {
     return (
@@ -8,12 +11,13 @@ const Navbar = () => {
                 <div>
                     <Heading>ULTRA</Heading>
                 </div>
-                <div>
+                <BlockDiv>
                     <Link>Home</Link>
                     <Link>Services</Link>
                     <Link>Products</Link>
                     <ButtonNav>Sign up</ButtonNav>
-                </div>
+                </BlockDiv>
+                <HamburNav />
             </Nav>
         </div>
     )
